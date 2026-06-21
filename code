@@ -1,0 +1,64 @@
+*****************************************CODE1**********************************************
+#include <bits/stdc++.h>
+using namespace std;
+
+#define BAI "VINH"
+#define FIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
+#define ll long long
+#define open() freopen(BAI".inp", "r", stdin); freopen(BAI".out", "w", stdout)
+
+void lhhz(){
+    ll m = 0, k = 0, p = 0;
+    cin >> m >> k >> p;
+    __int128_t vinh=(__int128_t)m+(__int128_t)k*p*p;
+    if(vinh == 0) {
+        cout << 0;
+        return;
+    }
+    string ans;
+    while(vinh > 0) {
+        ans.push_back(char('0'+vinh%10));
+        vinh/=10;
+    }
+    reverse(ans.begin(),ans.end());
+    cout << ans;
+}
+
+int main(){
+    FIO();
+    //open();
+    lhhz();
+    return 0;
+}
+******************************************CODE2***********************************************
+#include <bits/stdc++.h>
+using namespace std;
+
+#define BAI "VINH"
+#define FIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
+#define ll long long
+#define open() freopen(BAI".inp", "r", stdin); freopen(BAI".out", "w", stdout)
+
+void lhhz(){
+    ll m, k, p;
+    cin >> m >> k >> p;
+    __int128_t vinh=(__int128_t)m+(__int128_t)k*p*p;
+    if(vinh == 0) {
+        cout << 0;
+        return;
+    }
+    string ans;
+    while(vinh > 0) {
+        ans.push_back(char('0'+vinh%10));
+        vinh/=10;
+    }
+    reverse(ans.begin(),ans.end());
+    cout << ans;
+}
+
+int main(){
+    FIO();
+    //open();
+    lhhz();
+    return 0;
+}
